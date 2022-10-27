@@ -92,6 +92,7 @@ namespace Projekt_Deutsch
                 rgnrnd1 = 0;
                 rgnrnd2 = 20;
 
+                
 
 
                 Runde2();
