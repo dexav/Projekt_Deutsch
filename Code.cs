@@ -4,6 +4,48 @@ using System.Security.Cryptography.X509Certificates;
 namespace Projekt_Deutsch
 {
     internal class Program
+   
+     {
+
+            var item = new List<string>();
+            var data = new List<List<string>>();
+            var file = @"C:\Users\xnurs\Desktop\Verben.txt";
+
+            data = ReadFromFile(file);
+            
+            string[][] dataArray = data.Select(a => a.ToArray()).ToArray(); 
+
+         
+            for (int i = 0; i < dataArray.Length; i++)
+            {
+                for (int j = 0; j < dataArray[i].Length; j++)
+                {
+                    Console.WriteLine(dataArray[i][j]);
+                }
+            }
+
+
+
+        }
+        static List<List<string>> ReadFromFile(string filename)
+        {
+            var fileItem = new List<string>();
+            var fileData = new List<List<string>>();
+            using (var sr= new StreamReader(filename))
+            {
+                string line;
+                while ((line = sr.ReadLine()) != null)
+                {
+                    fileItem = line.Split('\t').ToList();
+                    fileData.Add(fileItem);
+                }
+                return fileData;
+            }
+
+        }
+    
+    
+    
     {
 
         private static string[] infinitiv =
