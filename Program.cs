@@ -77,28 +77,42 @@ namespace Projekt_Deutsch
                 }
                 void Runde2()
                 {
-                    for (richtig = 0; versuche < 10; versuche++)
+                                        for (richtig = 0; versuche < 10; versuche++)
                     {
-                        
-                        Console.ForegroundColor = ConsoleColor.White;
+                        Console.WriteLine("sage mir die 3 person singular im Präteritum dann den Partizip 2 und dann 2 Person singular im Präsenz von diesem Verb:");
                         Random Verb1 = new Random();
-                            int verb1 = Verb1.Next(0, listpraet.Count());
-                        Console.WriteLine("sage mir die 3 person im Präteritum von diesem Verb:");
-                            Console.WriteLine(listinfinitv[verb1]);
-                            string antwort = Console.ReadLine();
-                            bool Richtig = antwort.Equals(listpraet[verb1]);
-                            if (Richtig == true)
-                            {
+                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        Console.WriteLine(listinfinitv[verb1]);
+                        string antwort = Console.ReadLine();
+                        bool Richtig = antwort.Equals(listpraet[verb1]);
+                        if (Richtig == true)
+                        {
                             Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Richtig ");
                             richtig++;
-                            }
-                            else
-                            {
+                        }
+                        else
+                        {
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("falsch");
-                            }
                         }
+                        Random Verb1 = new Random();
+                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        Console.WriteLine(listinfinitv[verb1]);
+                        string antwort = Console.ReadLine();
+                        bool Richtig = antwort.Equals(listpraet[verb1]);
+                        if (Richtig == true)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Richtig ");
+                            richtig++;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("falsch");
+                        }
+                    }
                     }
                     void Runde3()
                     {
