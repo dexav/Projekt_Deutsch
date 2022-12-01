@@ -48,13 +48,13 @@ namespace Projekt_Deutsch
                         bool Richtig = antwort.Equals(listpraet[verb1]);
                         if (Richtig == true)
                         {
-                            //farbe
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Richtig ");
                             richtig++;
                         }
                         else
                         {
-                            //farbe
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("falsch");
                         }
                         Random Verb1 = new Random();
@@ -64,13 +64,13 @@ namespace Projekt_Deutsch
                         bool Richtig = antwort.Equals(listpraet[verb1]);
                         if (Richtig == true)
                         {
-                            //farbe
+                            Console.ForegroundColor = ConsoleColor.Green;
                             Console.WriteLine("Richtig ");
                             richtig++;
                         }
                         else
                         {
-                            //farbe
+                            Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("falsch");
                         }
                     }
