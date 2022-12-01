@@ -112,6 +112,22 @@ namespace Projekt_Deutsch
                             Console.ForegroundColor = ConsoleColor.Red;
                             Console.WriteLine("falsch");
                         }
+                        Random Verb1 = new Random();
+                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        Console.WriteLine(listinfinitv[verb1]);
+                        string antwort = Console.ReadLine();
+                        bool Richtig = antwort.Equals(listpraet[verb1]);
+                        if (Richtig == true)
+                        {
+                            Console.ForegroundColor = ConsoleColor.Green;
+                            Console.WriteLine("Richtig ");
+                            richtig++;
+                        }
+                        else
+                        {
+                            Console.ForegroundColor = ConsoleColor.Red;
+                            Console.WriteLine("falsch");
+                        }
                     }
                     }
                     void Runde3()
