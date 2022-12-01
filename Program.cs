@@ -37,34 +37,10 @@ namespace Projekt_Deutsch
 
                     }
                     void Runde1()
-                {
-                    while (richtig == 0)
                     {
-                        Random Verb1 = new Random();
-                        int verb1 = Verb1.Next(0, listpraet.Count());
-
-
-
-                        Console.WriteLine("sage mir die 3 person im Präteritum von diesem Verb:");
-                        Console.WriteLine(listinfinitv[verb1]);
-                        string antwort = Console.ReadLine();
-
-                        bool Richtig = antwort.Equals(listpraet[verb1]);
-                        if (Richtig == true)
-                        {
-                            Console.WriteLine("Richtig ");
-                            richtig++;
-                            versuche++;
-                        }
-                        else
-                        {
-                            Console.WriteLine("falsch");
-                            versuche++;
-                        }
-                    }
                     for (richtig = 0; versuche < 10; versuche++)
                     {
-
+                        Console.WriteLine("sage mir die 3 person singular im Präteritum und dann den Partizip 2 von diesem Verb:");
                         Random Verb1 = new Random();
                         int verb1 = Verb1.Next(0, listpraet.Count());
                         Console.WriteLine(listinfinitv[verb1]);
@@ -72,50 +48,26 @@ namespace Projekt_Deutsch
                         bool Richtig = antwort.Equals(listpraet[verb1]);
                         if (Richtig == true)
                         {
+                            //farbe
                             Console.WriteLine("Richtig ");
                             richtig++;
                         }
                         else
                         {
+                            //farbe
                             Console.WriteLine("falsch");
                         }
                     }
                 }
                 void Runde2()
                 {
-                    while (richtig == 0)
-                    {
-                        Random Verb1 = new Random();
-                        int verb1 = Verb1.Next(0, listpraet.Count());
-
-
-                        Console.ForegroundColor = ConsoleColor.White;
-
-                        Console.WriteLine("sage mir die 3 person im Präteritum von diesem Verb:");
-                        Console.WriteLine(listinfinitv[verb1]);
-                        string antwort = Console.ReadLine();
-
-                        bool Richtig = antwort.Equals(listpraet[verb1]);
-                        if (Richtig == true)
-                        {
-                            Console.ForegroundColor = ConsoleColor.Green;
-                            Console.WriteLine("Richtig ");
-                            richtig++;
-                            versuche++;
-                        }
-                        else
-                        {
-                            Console.ForegroundColor = ConsoleColor.Red;
-                            Console.WriteLine("falsch");
-                            versuche++;
-                        }
-                    }
                     for (richtig = 0; versuche < 10; versuche++)
                     {
-
+                        
                         Console.ForegroundColor = ConsoleColor.White;
                         Random Verb1 = new Random();
                             int verb1 = Verb1.Next(0, listpraet.Count());
+                        Console.WriteLine("sage mir die 3 person im Präteritum von diesem Verb:");
                             Console.WriteLine(listinfinitv[verb1]);
                             string antwort = Console.ReadLine();
                             bool Richtig = antwort.Equals(listpraet[verb1]);
