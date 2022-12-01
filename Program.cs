@@ -57,6 +57,22 @@ namespace Projekt_Deutsch
                             //farbe
                             Console.WriteLine("falsch");
                         }
+                        Random Verb1 = new Random();
+                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        Console.WriteLine(listinfinitv[verb1]);
+                        string antwort = Console.ReadLine();
+                        bool Richtig = antwort.Equals(listpraet[verb1]);
+                        if (Richtig == true)
+                        {
+                            //farbe
+                            Console.WriteLine("Richtig ");
+                            richtig++;
+                        }
+                        else
+                        {
+                            //farbe
+                            Console.WriteLine("falsch");
+                        }
                     }
                 }
                 void Runde2()
