@@ -34,7 +34,7 @@ namespace Test
                 
                 if (Antwort == listB[2])
                 {
-                    Console.WriteLine("du nigger");
+                    Console.WriteLine("");
                 }
                 
                
