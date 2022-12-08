@@ -42,7 +42,7 @@ namespace Projekt_Deutsch
                     {
                         Console.WriteLine("sage mir die 3 person singular im Präteritum und dann den Partizip 2 von diesem Verb:");
                         Random Verb1 = new Random();
-                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        int verb1 = Verb1.Next(0,37;
                         Console.WriteLine(listinfinitv[verb1]);
                         string antwort = Console.ReadLine();
                         bool Richtig = antwort.Equals(listpraet[verb1]);
@@ -58,7 +58,7 @@ namespace Projekt_Deutsch
                             Console.WriteLine("falsch");
                         }
                         Random Verb1 = new Random();
-                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        int verb1 = Verb1.Next(0,37);
                         Console.WriteLine(listinfinitv[verb1]);
                         string antwort = Console.ReadLine();
                         bool Richtig = antwort.Equals(listpraet[verb1]);
@@ -97,7 +97,7 @@ namespace Projekt_Deutsch
                             Console.WriteLine("falsch");
                         }
                         Random Verb1 = new Random();
-                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        int verb1 = Verb1.Next(37,145);
                         Console.WriteLine(listinfinitv[verb1]);
                         string antwort = Console.ReadLine();
                         bool Richtig = antwort.Equals(listpraet[verb1]);
@@ -113,7 +113,7 @@ namespace Projekt_Deutsch
                             Console.WriteLine("falsch");
                         }
                         Random Verb1 = new Random();
-                        int verb1 = Verb1.Next(0, listpraet.Count());
+                        int verb1 = Verb1.Next(37,145);
                         Console.WriteLine(listinfinitv[verb1]);
                         string antwort = Console.ReadLine();
                         bool Richtig = antwort.Equals(listpraet[verb1]);
