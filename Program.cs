@@ -32,6 +32,7 @@ namespace Projekt_Deutsch
                 {
                     do
                     {
+                        versuche = 0;
                         for (richtig = 0; versuche < 10; versuche++)
                         {
                             Console.WriteLine("sage mir die 3 person singular im Präteritum und dann den Partizip 2 von diesem Verb:");
@@ -74,6 +75,7 @@ namespace Projekt_Deutsch
                 {
                     do
                     {
+                        versuche = 0;
                         for (richtig = 0; versuche < 10; versuche++)
                         {
                             Console.WriteLine("sage mir die 3 person singular im Präteritum dann den Partizip 2 und dann 2 Person singular im Präsenz von diesem Verb:");
@@ -139,6 +141,7 @@ namespace Projekt_Deutsch
                 {
                     do
                     {
+                        versuche = 0;
                         for (richtig = 0; versuche < 10; versuche++)
                         {
                             Random abfrage = new Random();
