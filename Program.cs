@@ -12,7 +12,7 @@ namespace Projekt_Deutsch
         private static int rgnrnd2 = 0;
         static void Main(string[] args)
         {
-            using (var reader = new StreamReader(@"C:\Users\leona\Desktop\VerbenFürDeutscch.txt"))
+            using (var reader = new StreamReader(@"C:\Users\leona\Desktop\VerbenFürDeutsch.txt"))
             {
                 List<string> listinfinitv = new List<string>();
                 List<string> listpraet = new List<string>();
@@ -92,8 +92,9 @@ namespace Projekt_Deutsch
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("falsch");
+                                Console.ForegroundColor = ConsoleColor.White;
+
                             }
-                            Console.WriteLine(listinfinitv[verb1]);
                             antwort = Console.ReadLine();
                             Richtig = antwort.Equals(listPart2[verb1]);
                             if (Richtig == true)
@@ -101,13 +102,16 @@ namespace Projekt_Deutsch
                                 Console.ForegroundColor = ConsoleColor.Green;
                                 Console.WriteLine("Richtig ");
                                 richtig++;
+                                Console.ForegroundColor = ConsoleColor.White;
+
                             }
                             else
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("falsch");
+                                Console.ForegroundColor = ConsoleColor.White;
+
                             }
-                            Console.WriteLine(listinfinitv[verb1]);
                             antwort = Console.ReadLine();
                             Richtig = antwort.Equals(listDupräs[verb1]);
                             if (Richtig == true)
@@ -116,12 +120,16 @@ namespace Projekt_Deutsch
                                 Console.WriteLine("Richtig ");
                                 richtig++;
                                 versuche++;
+                                Console.ForegroundColor = ConsoleColor.White;
+
                             }
                             else
                             {
                                 Console.ForegroundColor = ConsoleColor.Red;
                                 Console.WriteLine("falsch");
                                 versuche++;
+                                Console.ForegroundColor = ConsoleColor.White;
+
                             }
 
                         }
@@ -148,11 +156,15 @@ namespace Projekt_Deutsch
                                     Console.ForegroundColor = ConsoleColor.Green;
                                     Console.WriteLine("Richtig ");
                                     richtig++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listPart2[verb1]);
@@ -162,12 +174,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listDupräs[verb1]);
@@ -177,12 +193,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                             }
                             if (Abgefragt == 2)
@@ -199,12 +219,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listPart2[verb1]);
@@ -214,12 +238,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listDupräs[verb1]);
@@ -229,12 +257,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                             }
                             if (Abgefragt == 3)
@@ -251,12 +283,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listinfinitv[verb1]);
@@ -266,12 +302,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listDupräs[verb1]);
@@ -281,12 +321,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                             }
                             if (Abgefragt == 4)
@@ -303,12 +347,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listPart2[verb1]);
@@ -318,12 +366,16 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 antwort = Console.ReadLine();
                                 Richtig = antwort.Equals(listinfinitv[verb1]);
@@ -333,16 +385,20 @@ namespace Projekt_Deutsch
                                     Console.WriteLine("Richtig ");
                                     richtig++;
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                                 else
                                 {
                                     Console.ForegroundColor = ConsoleColor.Red;
                                     Console.WriteLine("falsch");
                                     versuche++;
+                                    Console.ForegroundColor = ConsoleColor.White;
+
                                 }
                             }
                         }
-                    } while (versuche / richtig < 0.70);
+                    } while ((versuche / richtig) < 0.70);
                 }
 
 
